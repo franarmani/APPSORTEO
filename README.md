@@ -4,6 +4,8 @@ Esta es una sencilla aplicación web que permite realizar sorteos aleatorios ent
 
 La página tiene un diseño atractivo con animaciones CSS, incluyendo un GIF de una ruleta que gira para agregar un toque divertido al proceso de selección del ganador.
 
+Preview: https://appsorteofran.netlify.app
+
 ## Características:
 - **Entrada de participantes**: Los usuarios pueden escribir los nombres de los participantes en un campo de texto.
 - **Sorteo aleatorio**: Con un clic en el botón "Realizar Sorteo", la aplicación selecciona aleatoriamente un ganador.
