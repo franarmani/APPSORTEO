@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="icono.png" type="image/png">
+  <title>App Sorteo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+</head>
+<body>
+  <div class="container">
+    <h1>
+      <img src="gira.png" alt="Ruleta" class="ruleta"> Realiza un Sorteo
+    </h1>
+    <textarea id="personas" placeholder="Escribe los nombres aquí, uno por línea..."></textarea>
+    <button id="realizarSorteo" disabled>Realizar Sorteo</button>
+    <div id="resultado" class="resultado">
+      <p id="ganador" class="fade">¡Aquí aparecerá el ganador!</p>
+    </div>
+  </div>
+
+  <div class="footer-menu">
+    <ul>
+      <li><a href="https://github.com/franarmani" target="_blank" class="social-icon"><i class="fab fa-github"></i></a></li>
+      <li><a href="https://www.instagram.com/fran.armani_/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="https://github.com/franarmani" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="https://samuraidesigns.framer.ai" target="_blank" class="social-icon"><i class="fas fa-briefcase"></i></a></li>
+    </ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #3498db, #00ff00);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px 25px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1s ease-out;
+}
+
+h1 {
+    background: linear-gradient(45deg, #3498db, #00ff00);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 80px;
+    margin-bottom: 25px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+   @keyframes girarRuleta {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .ruleta {
+    display: inline-block;
+    width: 50px; 
+    height: 50px;
+    animation: girarRuleta 3s linear infinite; 
+  }
+
+textarea {
+    position: relative;
+    width: 80%;
+    height: 160px;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    margin-bottom: 25px;
+    resize: none;
+    background-color: #f7f9fb;
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+button {
+    padding: 14px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: #00ff00;
+    color: #159415;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #00ff00;
+    color: #159415;
+}
+
+button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+    transform: none;
+    color: #ffff;
+}
+
+.resultado {
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ecf0f1;
+    display: none;
+    transition: opacity 0.5s ease;
+    animation: fadeIn 1s ease-out;
+}
+
+.resultado p {
+    font-size: 24px;
+    font-weight: 500;
+    color: #2c3e50;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.resultado.show p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.footer-menu {
+    position: fixed;
+    bottom: 0;
+    width: 600px;
+    background-color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 45px 45px 0 0;
+}
+
+.footer-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-menu li {
+    margin: 0 15px;
+}
+
+.footer-menu a {
+    font-size: 35px;
+    color: #3498db;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background-color: #f7f9fb;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-menu a:hover {
+    background-color: #3498db;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    textarea {
+        font-size: 14px;
+    }
+
+    .resultado p {
+        font-size: 20px;
+    }
+
+    .footer-menu {
+        width: 90%;
+    }
+
+    .footer-menu ul {
+        flex-direction: row;
+    }
+
+    .footer-menu li {
+        margin-bottom: 10px;
+    }
+
+    .footer-menu a {
+        font-size: 20px;
+        padding: 5px;
+    }
+}
+
+@media (min-width: 480px) {
+    /* Estilos para pantallas mayores a 479px */
+    .footer-menu {
+        width: 80%; /* Ajuste de ancho para pantallas más grandes */
+    }
+
+    .footer-menu ul {
+        justify-content: space-around; /* Mejor distribución de los enlaces */
+    }
+
+    .footer-menu a {
+        font-size: 25px; /* Tamaño adecuado para enlaces en pantallas grandes */
+    }
+    .container{
+        width: 80%;
+        height: 600px;
+    }
+    h1{
+        font-size: 3rem;
+    }
+}
